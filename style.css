@@ -13,6 +13,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: lightskyblue;
+  text-align: center;
 }
 
 .container {
@@ -21,10 +22,11 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  width: 30%;
-  height: 30%;
+  min-width: 30%;
+  min-height: 30%;
   padding: 1em;
   box-shadow: 1em 1em rgba(0, 0, 0, 0.4);
+  gap: 0.5em;
 }
 
 .container div {
@@ -47,7 +49,23 @@ label,
   border: none;
   border-bottom: 2px solid black;
   background-color: lightgray;
+  width: 70%;
 }
 
-.decimal-display__value {
+button {
+  font-size: 0.75em;
+  border: 0px transparent;
+  border-radius: 0.5em;
+  background-color: lightskyblue;
+  padding: 0.5em;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover,
+button::selection {
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  translate: -5% -3%;
 }
